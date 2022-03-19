@@ -54,7 +54,7 @@ impl Counter {
         // e.g. self.val = i8::wrapping_add(self.val, 1);
         // https://doc.rust-lang.org/std/primitive.i8.html#method.wrapping_add
         self.val += 1;
-        let log_message = format!("Increased number to {}", self.val);
+        let log_message = format!("Mi primer smart contract wacho, aumente el numero a:  {}", self.val);
         env::log(log_message.as_bytes());
         after_counter_change();
     }
